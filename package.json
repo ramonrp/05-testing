@@ -13,7 +13,9 @@
     "type-check:watch": "npm run type-check -- --watch",
     "test": "jest -c ./config/test/jest.js --verbose",
     "test:watch": "npm run test -- --watchAll -i",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "test:e2e":"npm run start -- cy:open",
+    "cy:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -64,6 +66,7 @@
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.8",
     "babel-loader": "^8.2.2",
+    "cypress": "^9.4.1",
     "dotenv-webpack": "^7.0.3",
     "html-webpack-plugin": "^5.3.2",
     "jest": "^27.0.6",
