@@ -5,4 +5,5 @@ module.exports = {
   testEnvironment: 'jsdom',
   moduleDirectories: ['node_modules', '<rootDir>/src'],
   setupFilesAfterEnv: ['<rootDir>/config/test/setup-after.ts'],
+  testPathIgnorePatterns: ['<rootDir>/cypress/'],
 };
