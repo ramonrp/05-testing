@@ -14,7 +14,7 @@
     "test": "jest -c ./config/test/jest.js --verbose",
     "test:watch": "npm run test -- --watchAll -i",
     "clean": "rimraf dist",
-    "test:e2e":"npm run start -- cy:open",
+    "test:e2e": "npm run start -- cy:open",
     "cy:open": "cypress open"
   },
   "repository": {
@@ -56,6 +56,7 @@
     "@babel/preset-typescript": "^7.14.5",
     "@emotion/babel-plugin": "^11.3.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "@testing-library/cypress": "^8.0.2",
     "@testing-library/dom": "^8.11.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
